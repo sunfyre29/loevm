@@ -1,5 +1,14 @@
 using my.bookshop as my from '../db/schema';
 
 service CatalogService {
-    @readonly entity Books as projection on my.Books;
+        @Capabilities       : {
+        DeleteRestrictions.Deletable : false,
+        InsertRestrictions.Insertable: true,
+        UpdateRestrictions.Updatable : true,
+    }
+    @odata.draft.enabled: true
+    entity Books      as projection on my.Books;
+
+    entity DeleteFlag as projection on my.DeleteFlag;
+
 }

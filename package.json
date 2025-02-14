@@ -8,8 +8,7 @@
   "dependencies": {
     "@sap/cds": "^8",
     "express": "^4",
-    "loekz": "^1.0.0",
-    "loevmp": "^1.0.0"
+    "loekz": "^1.0.0"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.8.0",
