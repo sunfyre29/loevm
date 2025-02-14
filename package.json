@@ -13,12 +13,29 @@
   "devDependencies": {
     "@cap-js/cds-types": "^0.8.0",
     "@cap-js/sqlite": "^1",
-    "@sap/cds-dk": "^8"
+    "@sap/cds-dk": "^8",
+    "rimraf": "^5.0.5",
+    "mbt": "^1.2.29"
+  },
+  "cds": {
+  
+    "requires": {
+      "db": {
+        "kind": "sqlite"
+      }
+    }
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-loevm-lrop": "cds watch --open loevm-lrop/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy loevm --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "workspaces": [
     "loevmp"
+  ],
+  "sapux": [
+    "app/loevm-lrop"
   ]
 }
