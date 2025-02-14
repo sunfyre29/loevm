@@ -8,17 +8,17 @@
   "dependencies": {
     "@sap/cds": "^8",
     "express": "^4",
+    "loekz": "^1.0.0",
     "loevmp": "^1.0.0"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.8.0",
     "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^8",
-    "rimraf": "^5.0.5",
-    "mbt": "^1.2.29"
+    "mbt": "^1.2.29",
+    "rimraf": "^5.0.5"
   },
   "cds": {
-  
     "requires": {
       "db": {
         "kind": "sqlite"
@@ -33,7 +33,7 @@
     "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "workspaces": [
-    "loevmp"
+    "loekz"
   ],
   "sapux": [
     "app/loevm-lrop"
