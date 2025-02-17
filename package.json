@@ -29,12 +29,14 @@
     "watch-loevm-lrop": "cds watch --open loevm-lrop/webapp/index.html?sap-ui-xx-viewCache=false",
     "undeploy": "cf undeploy loevm --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
+    "watch-bookshoplrop": "cds watch --open bookshoplrop/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "workspaces": [
     "loekz"
   ],
   "sapux": [
-    "app/loevm-lrop"
+    "app/loevm-lrop",
+    "app/bookshoplrop"
   ]
 }

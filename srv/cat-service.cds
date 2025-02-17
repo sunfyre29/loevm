@@ -11,4 +11,6 @@ service CatalogService {
 
     entity DeleteFlag as projection on my.DeleteFlag;
 
+    entity Authors as projection on my.Authors;
+
 }

@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "loevm.nm.bookshop.loevmlrop",
+    "id": "nm.loevm.bookshoplrop",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.16.3",
-      "toolsId": "3310f938-8eec-48a4-8927-1939438eb058"
+      "toolsId": "8661b646-18ed-4857-94c8-d8fe55dd2020"
     },
     "dataSources": {
       "mainService": {
@@ -49,8 +49,7 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {},
-        "sap.f": {}
+        "sap.fe.templates": {}
       }
     },
     "contentDensities": {
@@ -61,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "loevm.nm.bookshop.loevmlrop.i18n.i18n"
+          "bundleName": "nm.loevm.bookshoplrop.i18n.i18n"
         }
       },
       "": {
@@ -82,28 +81,17 @@
       "css": []
     },
     "routing": {
-      "config": {
-        "flexibleColumnLayout": {
-          "defaultTwoColumnLayoutType": "TwoColumnsMidExpanded",
-          "defaultThreeColumnLayoutType": "ThreeColumnsMidExpanded"
-        },
-        "routerClass": "sap.f.routing.Router"
-      },
+      "config": {},
       "routes": [
         {
           "pattern": ":?query:",
           "name": "BooksList",
-          "target": [
-            "BooksList"
-          ]
+          "target": "BooksList"
         },
         {
           "pattern": "Books({key}):?query:",
           "name": "BooksObjectPage",
-          "target": [
-            "BooksList",
-            "BooksObjectPage"
-          ]
+          "target": "BooksObjectPage"
         }
       ],
       "targets": {
@@ -132,9 +120,7 @@
               },
               "initialLoad": "Enabled"
             }
-          },
-          "controlAggregation": "beginColumnPages",
-          "contextPattern": ""
+          }
         },
         "BooksObjectPage": {
           "type": "Component",
@@ -145,17 +131,9 @@
               "editableHeaderContent": false,
               "contextPath": "/Books"
             }
-          },
-          "controlAggregation": "midColumnPages",
-          "contextPattern": "/Books({key})"
+          }
         }
       }
-    },
-    "rootView": {
-      "viewName": "sap.fe.templates.RootContainer.view.Fcl",
-      "type": "XML",
-      "async": true,
-      "id": "appRootView"
     }
   },
   "sap.fiori": {

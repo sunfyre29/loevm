@@ -1,19 +1,17 @@
-ID,title,stock,bestseller,author,genre,price
-1,Harry Potter and the Sorcerer's Stone,200,true,J.K. Rowling,Fantasy,19.99
-2,Harry Potter and the Chamber of Secrets,150,true,J.K. Rowling,Fantasy,19.99
-3,Harry Potter and the Prisoner of Azkaban,180,true,J.K. Rowling,Fantasy,19.99
-4,Harry Potter and the Goblet of Fire,120,true,J.K. Rowling,Fantasy,22.99
-5,Harry Potter and the Order of the Phoenix,100,true,J.K. Rowling,Fantasy,22.99
-6,Harry Potter and the Half-Blood Prince,90,true,J.K. Rowling,Fantasy,22.99
-7,Harry Potter and the Deathly Hallows,110,true,J.K. Rowling,Fantasy,24.99
-8,A Game of Thrones,300,true,George R.R. Martin,Fantasy,14.99
-9,A Clash of Kings,250,true,George R.R. Martin,Fantasy,14.99
-10,A Storm of Swords,200,true,George R.R. Martin,Fantasy,16.99
-11,A Feast for Crows,180,false,George R.R. Martin,Fantasy,16.99
-12,A Dance with Dragons,160,false,George R.R. Martin,Fantasy,16.99
-13,The Hobbit,220,true,J.R.R. Tolkien,Fantasy,15.99
-14,The Fellowship of the Ring,180,true,J.R.R. Tolkien,Fantasy,18.99
-15,The Two Towers,170,true,J.R.R. Tolkien,Fantasy,18.99
-16,The Return of the King,160,true,J.R.R. Tolkien,Fantasy,18.99
+ID,title,stock,bestseller,author_id,genre,price
+1,Harry Potter and the Sorcerer's Stone,200,true,101,Fantasy,19.99
+2,Harry Potter and the Chamber of Secrets,150,true,101,Fantasy,19.99
+3,Harry Potter and the Prisoner of Azkaban,180,true,101,Fantasy,19.99
+4,Harry Potter and the Goblet of Fire,120,true,101,Fantasy,22.99
+5,Harry Potter and the Order of the Phoenix,100,true,101,Fantasy,22.99
+6,Harry Potter and the Half-Blood Prince,90,true,101,Fantasy,22.99
+7,Harry Potter and the Deathly Hallows,110,true,101,Fantasy,24.99
+8,A Game of Thrones,300,true,107,Fantasy,14.99
+9,A Clash of Kings,250,true,107,Fantasy,14.99
+10,A Storm of Swords,200,true,107,Fantasy,16.99
+11,A Feast for Crows,180,false,107,Fantasy,16.99
+12,A Dance with Dragons,160,false,107,Fantasy,16.99
+
+
 
 

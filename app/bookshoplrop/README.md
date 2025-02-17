@@ -1,16 +1,16 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Feb 14 2025 08:30:07 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Mon Feb 17 2025 14:14:46 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.16.3|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/odata/v4/catalog/|
-|**Module Name**<br>loevm-lrop|
-|**Application Title**<br>Book Shop|
-|**Namespace**<br>loevm.nm.bookshop|
+|**Module Name**<br>bookshoplrop|
+|**Application Title**<br>Bücherladen|
+|**Namespace**<br>nm.loevm|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.132.1|
 |**Enable Code Assist Libraries**<br>False|
@@ -18,7 +18,7 @@
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Books|
 
-## loevm-lrop
+## bookshoplrop
 
 An SAP Fiori application.
 
@@ -26,7 +26,7 @@ An SAP Fiori application.
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply start your CAP project and navigate to the following location in your browser:
 
-http://localhost:4004/loevm-lrop/webapp/index.html
+http://localhost:4004/bookshoplrop/webapp/index.html
 
 #### Pre-requisites:
 
