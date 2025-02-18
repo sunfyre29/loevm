@@ -1,16 +1,16 @@
-ID,title,stock,bestseller,author_id,genre,price
-1,Harry Potter and the Sorcerer's Stone,200,true,101,Fantasy,19.99
-2,Harry Potter and the Chamber of Secrets,150,true,101,Fantasy,19.99
-3,Harry Potter and the Prisoner of Azkaban,180,true,101,Fantasy,19.99
-4,Harry Potter and the Goblet of Fire,120,true,101,Fantasy,22.99
-5,Harry Potter and the Order of the Phoenix,100,true,101,Fantasy,22.99
-6,Harry Potter and the Half-Blood Prince,90,true,101,Fantasy,22.99
-7,Harry Potter and the Deathly Hallows,110,true,101,Fantasy,24.99
-8,A Game of Thrones,300,true,107,Fantasy,14.99
-9,A Clash of Kings,250,true,107,Fantasy,14.99
-10,A Storm of Swords,200,true,107,Fantasy,16.99
-11,A Feast for Crows,180,false,107,Fantasy,16.99
-12,A Dance with Dragons,160,false,107,Fantasy,16.99
+ID,title,stock,bestseller,author_id,genre,price,deleteFlag
+1,Harry Potter and the Sorcerer's Stone,200,true,101,Fantasy,19.99,false
+2,Harry Potter and the Chamber of Secrets,150,true,101,Fantasy,19.99,false
+3,Harry Potter and the Prisoner of Azkaban,180,true,101,Fantasy,19.99,false
+4,Harry Potter and the Goblet of Fire,120,true,101,Fantasy,22.99,false
+5,Harry Potter and the Order of the Phoenix,100,true,101,Fantasy,22.99,false
+6,Harry Potter and the Half-Blood Prince,90,true,101,Fantasy,22.99,false
+7,Harry Potter and the Deathly Hallows,110,true,101,Fantasy,24.99,false
+8,A Game of Thrones,300,true,107,Fantasy,14.99,false
+9,A Clash of Kings,250,true,107,Fantasy,14.99,false
+10,A Storm of Swords,200,true,107,Fantasy,16.99,false
+11,A Feast for Crows,180,false,107,Fantasy,16.99,false
+12,A Dance with Dragons,160,false,107,Fantasy,16.99,false
 
 
 

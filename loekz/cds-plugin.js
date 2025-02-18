@@ -1,11 +1,106 @@
+
+const { entities } = require('@sap/cds');
 const cds = require('@sap/cds');
 const log = cds.log("LOEKZ Plugin");
 
 log.debug("is starting....")
 
-log("hello from the plugin side of life")
 
-cds.on('served', services => {
+
+
+
+//
+
+
+
+
+cds.once('served', () => {
+
+
+    for (const srv of cds.services) {
+        for (const entities of srv.entities) {
+            if (entities['@loekz']) {
+                srv.after('each',entities, (item) => {
+                    item.deleteFlag = true;
+                })
+
+                //Log annotierte Entitäten
+
+                console.log(entities.name);
+
+            }
+            for (const key in entities.elements) {
+                if (Object.hasOwnProperty.call(entities.elements, key)) {
+                    
+                    const element = entities.elements[key];
+
+                    if (element['@loekz']) {
+                        //Log annotierte Felder
+                        //console.log("NEW")
+                        //console.log(element);
+                        srv.after('each', entities, (item) => {
+                            //item[element.deleteFlag] += " 🔥 Devtoberfest 🔥";
+                           // item.deleteFlag = true;
+                           
+                        });
+                    }
+                }
+            }
+        }
+    }
+});
+
+
+
+//
+
+
+
+// cds.once('served', () => {
+
+//     for (const srv of cds.services) {
+//         for (const entity of srv.entities) {
+//             // Check if the entity has the @loekz annotation
+//             // if (entity['@loekz']) {
+
+//             //     console.log(entity.name);
+
+//             // }
+//             for (const key in entities.elements) {
+//                 if (Object.hasOwnProperty.call(entities.elements, key)) {
+//                     const element = entities.element[key];
+//                     if (element['@loekz']) {
+//                         console.log(element.name);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cds.on('served', services => {
 
     const basicInfo = x => [x.name, x.kind]
     const isAppService = x => x.kind == 'app-service'
@@ -13,30 +108,28 @@ cds.on('served', services => {
 
         name: en.name,
         entity: en,
-        elements: [...en.elements].filter(el => el['@loekz']).map(el => el.name)
+        elements: [...en.elements].map(el => el.name) // [...en.elements].filter(el => el['@loekz']).map(el => el.name)
     })
 
 
     const myservices = [...services].filter(isAppService)
 
-    //loggt und mappt alle Entitäten die  @loekz annotation haben
     myservices.forEach(s => {
         [...s.entities]
             .map(loekzElements)
             .filter(x => x.elements.length)
             .forEach(en => {
-                log(en.name)
-                s.after('READ', en.name, records => {
-                    records.forEach(r => {
-                        en.elements.forEach(el => {
-                            log("hi")
-                           r[el] = r[el].toUpperCase() // schreibt annotierte Felder in UPPERCASE
-                            
-                        })
-                    })
-                })
-                })
+
+                const isAnnotated = en => !!en['@loekz']; // Returns true if ENTITY has @loekz
+                const annotatedEntities = [...s.entities].filter(isAnnotated);
+
+                annotatedEntities.forEach(en => {
+                    log("Annotierte Entität:", en.name);
+                });
+                
+
             })
     })
+}) */
 
 

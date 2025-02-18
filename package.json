@@ -26,6 +26,7 @@
   },
   "scripts": {
     "start": "cds-serve",
+    "watch": "cds watch",
     "watch-loevm-lrop": "cds watch --open loevm-lrop/webapp/index.html?sap-ui-xx-viewCache=false",
     "undeploy": "cf undeploy loevm --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
