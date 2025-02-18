@@ -1,15 +1,12 @@
 
-const { entities } = require('@sap/cds');
 const cds = require('@sap/cds');
 const log = cds.log("LOEKZ Plugin");
+const {
+    logMessage
+} = require('./deleteHandler');
+
 
 log.debug("is starting....")
-
-
-
-
-
-//
 
 
 
@@ -17,12 +14,14 @@ log.debug("is starting....")
 cds.once('served', () => {
 
 
+
     for (const srv of cds.services) {
         for (const entities of srv.entities) {
             if (entities['@loekz']) {
-                srv.after('each',entities, (item) => {
+                srv.after('each', entities, (item) => {
                     item.deleteFlag = true;
                 })
+
 
                 //Log annotierte Entitäten
 
@@ -31,7 +30,7 @@ cds.once('served', () => {
             }
             for (const key in entities.elements) {
                 if (Object.hasOwnProperty.call(entities.elements, key)) {
-                    
+
                     const element = entities.elements[key];
 
                     if (element['@loekz']) {
@@ -39,9 +38,9 @@ cds.once('served', () => {
                         //console.log("NEW")
                         //console.log(element);
                         srv.after('each', entities, (item) => {
-                            //item[element.deleteFlag] += " 🔥 Devtoberfest 🔥";
-                           // item.deleteFlag = true;
-                           
+                         
+                            // item.deleteFlag = true;
+
                         });
                     }
                 }

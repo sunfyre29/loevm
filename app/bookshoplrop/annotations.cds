@@ -78,6 +78,15 @@ annotate service.Books with @(
         },
         {
             $Type : 'UI.DataField',
+            Value : deleteFlag,
+            Label : '{i18n>Deleteflag}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : price,
+        },
+        {
+            $Type : 'UI.DataField',
             Value : author.name,
             Label : '{i18n>Author}',
         },
@@ -85,10 +94,6 @@ annotate service.Books with @(
             $Type : 'UI.DataField',
             Value : author.placeOfBirth,
             Label : '{i18n>placeOfBirth}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : price,
         },
         {
             $Type : 'UI.DataField',

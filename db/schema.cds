@@ -6,7 +6,7 @@ using {
   cuid
 } from '@sap/cds/common';
 
-
+@loekz
 entity Books : managed {
   key ID         : Integer;
       title      : String(100)            @title: '{i18n>Title}';

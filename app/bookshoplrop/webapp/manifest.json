@@ -115,6 +115,15 @@
                   "tableSettings": {
                     "type": "ResponsiveTable",
                     "enableExport": true
+                  },
+                  "actions": {
+                    "ResetController": {
+                      "press": "nm.loevm.bookshoplrop.ext.resetController.ResetController.resetDeleteFlag",
+                      "visible": true,
+                      "enabled": true,
+                      "requiresSelection": false,
+                      "text": "Löschkennzeichen zurücksetzen"
+                    }
                   }
                 }
               },
