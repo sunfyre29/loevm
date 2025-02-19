@@ -11,6 +11,22 @@ ID,title,stock,bestseller,author_id,genre,price,deleteFlag
 10,A Storm of Swords,200,true,107,Fantasy,16.99,false
 11,A Feast for Crows,180,false,107,Fantasy,16.99,false
 12,A Dance with Dragons,160,false,107,Fantasy,16.99,false
+13,The Hobbit,350,true,102,Fantasy,12.99,false
+14,The Fellowship of the Ring,280,true,102,Fantasy,13.99,false
+15,The Two Towers,260,true,102,Fantasy,13.99,false
+16,The Return of the King,240,true,102,Fantasy,13.99,false
+17,The Name of the Wind,220,true,103,Fantasy,17.99,false
+18,The Wise Man's Fear,200,true,103,Fantasy,17.99,false
+19,The Way of Kings,300,true,104,Fantasy,18.99,false
+20,Words of Radiance,280,true,104,Fantasy,18.99,false
+21,Oathbringer,250,false,104,Fantasy,18.99,false
+22,Rhythm of War,230,false,104,Fantasy,18.99,false
+23,The Blade Itself,180,false,105,Fantasy,15.99,false
+24,Before They Are Hanged,170,false,105,Fantasy,15.99,false
+25,Last Argument of Kings,160,false,105,Fantasy,15.99,false
+26,The Lies of Locke Lamora,190,true,106,Fantasy,14.99,false
+27,Red Seas Under Red Skies,180,false,106,Fantasy,14.99,false
+28,Republic of Thieves,170,false,106,Fantasy,14.99,false
 
 
 

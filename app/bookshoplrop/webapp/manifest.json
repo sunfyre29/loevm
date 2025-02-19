@@ -117,11 +117,11 @@
                     "enableExport": true
                   },
                   "actions": {
-                    "ResetController": {
-                      "press": "nm.loevm.bookshoplrop.ext.resetController.ResetController.resetDeleteFlag",
+                    "ResetControllerExt": {
+                      "press": "nm.loevm.bookshoplrop.ext.resetControllerExt.ResetControllerExt.onResetFlag",
                       "visible": true,
                       "enabled": true,
-                      "requiresSelection": false,
+                      "requiresSelection": true,
                       "text": "Löschkennzeichen zurücksetzen"
                     }
                   }

@@ -14,8 +14,6 @@ entity Books : managed {
       bestseller : Boolean                @title: '{i18n>Bestseller}';
       author     : Association to Authors @title: '{i18n>Author}';
       genre      : String(100)            @title: '{i18n>Genre}';
-      testField  : String(10);
-
       @Semantics.amount.currencyCode: 'currency'
       price      : Decimal(15, 2)         @title: '{i18n>Price}';
       currency   : Currency;

@@ -4,7 +4,7 @@ sap.ui.define([
     'use strict';
 
     return {
-        resetDeleteFlag: function(oEvent) {
+        onResetFlag: function(oEvent) {
             MessageToast.show("Custom handler invoked.");
         }
     };
