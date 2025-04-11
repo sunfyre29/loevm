@@ -16,7 +16,7 @@ entity Books : managed {
       genre      : String(100)            @title: '{i18n>Genre}';
       @Semantics.amount.currencyCode: 'currency'
       price      : Decimal(15, 2)         @title: '{i18n>Price}';
-      currency   : Currency;
+     // currency   : Currency;
       deleteFlag : Boolean;
 }
 

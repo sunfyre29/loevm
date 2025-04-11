@@ -15,8 +15,6 @@ const isAnnotated = (entity) => (
         || entity.elements && Object.values(entity.elements).some(e => e['@loekz'])) && entity.query?.SET?.op !== 'union'
 )
 
-
-
 cds.once('served', () => {
 
     for (const srv of cds.services) {
@@ -25,6 +23,7 @@ cds.once('served', () => {
 
                 cds.db.before("DELETE", entity, checkAnnotation)
                 cds.db.before("DELETE", entity, setDeleteFlag)
+                cds.db.before("DELETE", entity, logMessage)
             }
         }
     }
@@ -35,7 +34,7 @@ cds.once('served', () => {
             if (entities['@loekz']) {
                 srv.after('each', entities, (item) => {
                     // item.deleteFlag = true;
-                    console.log("Hi")
+                    //console.log("Hi")
                 })
                 //Log annotierte Entitäten
 

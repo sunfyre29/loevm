@@ -26,18 +26,8 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'testField',
-                Value : testField,
-            },
-            {
-                $Type : 'UI.DataField',
                 Value : price,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'currency_code',
-                Value : currency_code,
-            },
+            }
         ],
     },
     UI.Facets : [
@@ -94,11 +84,6 @@ annotate service.Books with @(
             $Type : 'UI.DataField',
             Value : author.placeOfBirth,
             Label : '{i18n>placeOfBirth}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : testField,
-            Label : 'testField',
         },
         {
             $Type : 'UI.DataField',
