@@ -12,5 +12,7 @@ service CatalogService {
 
     entity Authors as projection on my.Authors;
 
+    action setDeleteFlagTrue() returns Boolean;
+
 
 }

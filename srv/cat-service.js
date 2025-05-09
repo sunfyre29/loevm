@@ -1,19 +1,17 @@
 const cds = require("@sap/cds");
 
-module.exports = cds.service.impl(async function (srv) {
 
-    const { Books } = srv.entities;
 
-    srv.after('READ', 'Books', setFlagFalse);
+module.exports = cds.service.impl(function () {
+this.on('setDeleteFlagTrue',async (req) => {
 
-    function setFlagFalse(books) { 
-        if (!Array.isArray(books)) {
-            books = [books]; // Convert single object to an array
-        }
-        books.forEach(book => {
-            book.deleteFlag = false;
-        });
-    }
+    const { Books } = this.entities;
+    
+    const result = await cds
+      .transaction(req)                   
+      .run(UPDATE(Books).set({ deleteFlag: false }));
 
+    return result;
+  }); 
 });
 

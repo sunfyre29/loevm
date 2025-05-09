@@ -14,9 +14,9 @@ entity Books : managed {
       bestseller : Boolean                @title: '{i18n>Bestseller}';
       author     : Association to Authors @title: '{i18n>Author}';
       genre      : String(100)            @title: '{i18n>Genre}';
-      @Semantics.amount.currencyCode: 'currency'
+      //@Semantics.amount.currencyCode: 'currency'
       price      : Decimal(15, 2)         @title: '{i18n>Price}';
-     // currency   : Currency;
+      //currency   : Currency;
       deleteFlag : Boolean;
 }
 
@@ -30,3 +30,5 @@ entity Authors : managed {
       books        : Association to many Books
                        on books.author = $self;
 }
+
+

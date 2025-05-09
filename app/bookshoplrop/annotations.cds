@@ -196,3 +196,13 @@ annotate service.Authors with {
     name @Common.Label : 'author/name'
 };
 
+
+annotate service.Books with @(UI.LineItem: [
+  {
+    $Type : 'UI.DataFieldForAction',
+    Action: 'CatalogService.EntityContainer/setDeleteFlagTrue',
+    Label : 'LKOEZ zurücksetzen',
+    Criticality: #Information
+  }
+]);
+
